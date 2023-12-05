@@ -1,0 +1,199 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Página Index */
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    padding: 90px;
+  }
+
+.background-image {
+    background-image: url('/imgs/main1.jpg'); 
+    background-size: 95% auto;
+    background-position: right center;
+    height: 100vh;
+  }
+
+
+  /* Página Main */
+
+  .container h2 {
+    text-align: center;
+  }
+
+body.main-body {
+    background-image: url('imgs/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    opacity: 0.8;
+  } 
+
+
+
+  /* Estilos para o modal */
+.modal {
+  display: none; /* ocultar inicialmente */
+  position: fixed; /* posição fixa na tela */
+  z-index: 1; /* definir a camada z para estar acima do conteúdo */
+  left: 0;
+  top: 0;
+  width: 100%; /* cobrir toda a largura da tela */
+  height: 100%; /* cobrir toda a altura da tela */
+  overflow: auto; /* adicionar rolagem se necessário */
+  background-color: rgba(0, 0, 0, 0.5); /* fundo escuro semi-transparente */
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* centralizar verticalmente e deixar espaço nas laterais */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 70%; /* largura do modal */
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Estilos para o botão de fechar */
+.btn-fechar {
+  display: block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn-fechar:hover {
+  background-color: #df362c;
+}
+
+
+
+
+
+
+
+/* Estilos para o formulário no modal de edição */
+
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 60%;
+  border-radius: 5px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.modal-content div {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+/* Estilos para organizar os campos lado a lado */
+.row {
+  display: flex;
+  gap: 10px;
+}
+
+.row div {
+  flex: 1;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  height: 100px;
+}
+
+button {
+  padding: 10px 20px;
+  margin-right: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-fechar {
+  float: right;
+  background-color: #f44336;
+  color: white;
+}
+
+.btn-fechar:hover {
+  background-color: #df362c;
+}
+
+.btn-editar,
+.btn-remover,
+.btn-status {
+  background-color: #4caf50;
+  color: white;
+}
+
+.btn-editar:hover,
+.btn-remover:hover,
+.btn-status:hover {
+  background-color: #4a994e;
+}
+
+/* Estilos para os botões com cores personalizadas */
+#alterarTarefa {
+  background-color: #2196F3; /* Azul */
+  color: white;
+}
+
+#removerTarefa {
+  background-color: #f44336; /* Vermelho */
+  color: white;
+}
+
+/* Efeito de hover nos botões */
+#alterarTarefa:hover {
+  background-color: #0e7ac4; /* Altere a cor ao passar o mouse */
+}
+
+#removerTarefa:hover {
+  background-color: #e53935; /* Altere a cor ao passar o mouse */
+}
