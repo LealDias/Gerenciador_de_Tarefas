@@ -16,7 +16,7 @@ body {
   }
 
 .background-image {
-    background-image: url('imgs/main1.jpg'); 
+    background-image: url('./imgs/main1.jpg'); 
     background-size: 95% auto;
     background-position: right center;
     height: 100vh;
